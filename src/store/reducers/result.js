@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions';
+import * as actionCreators from '../actions/actionTypes';
 
 const initialState = {
     results: []
@@ -6,7 +6,7 @@ const initialState = {
 
 const actionReducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.Actions.STORE_RESULT:
+        case actionCreators.Actions.STORE_RESULT:
             return {
                 ...state,
                 results: state
@@ -16,7 +16,7 @@ const actionReducer = (state = initialState, action) => {
                         value: action.result
                     })
             }
-        case actionTypes.Actions.DELETE_RESULT:
+        case actionCreators.Actions.DELETE_RESULT:
             return {
                 ...state,
                 results: state

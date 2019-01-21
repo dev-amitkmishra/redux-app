@@ -1,4 +1,4 @@
-export const  Actions = {
+export const Actions = {
     INCREMENT: 'INCREMENT',
     DECREMENT: 'DECREMENT',
     ADD: 'ADD',
