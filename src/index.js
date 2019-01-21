@@ -10,6 +10,9 @@ import registerServiceWorker from './registerServiceWorker';
 import counterReducer from './store/reducers/counter';
 import resultReducer from './store/reducers/result';
 
+// Reducer is for Sync code only
+// Reducer is the only thing which would update the state
+// Logic should be placed to Reducers(best practise)
 const reducer = combineReducers({
     ctr: counterReducer,
     res: resultReducer
